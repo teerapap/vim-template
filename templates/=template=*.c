@@ -1,11 +1,16 @@
 /*
- * %FFILE%
- * Copyright (C) %YEAR% %USER% <%MAIL%>
+ * %FFILE% --  %HERE%
  *
- * Distributed under terms of the %LICENSE% license.
+ * Copyright (c) %YEAR%, %COPYRIGHT_OWNER%
+ * All rights reserved.
+ *
+ * Created on: %FDATE%
+ * Author(s):
+ *        %USER% <%MAIL%>
+ *
+ * %FLICENSE%
  */
 
 #include "%FILE%.h"
 
 
-%HERE%
