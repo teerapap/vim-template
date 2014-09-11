@@ -297,6 +297,9 @@ function <SID>TExpandVars()
 	let l:class      = substitute(l:filen, "\\([a-zA-Z]\\+\\)", "\\u\\1\\e", "g")
 	let l:macroclass = toupper(l:class)
 	let l:camelclass = substitute(l:class, "_", "", "g")
+	let l:license    = exists("g:license") ? g:license : "MIT"
+	let l:flicense   = exists("g:flicense") ? g:flicense : ("Distributed under terms of the " . l:license . " license.")
+	let l:copyright_owner = exists("g:copyright_owner") ? g:copyright_owner : l:user
 
 	" Finally, perform expansions
 	call <SID>TExpand("DAY",   l:day)
@@ -316,7 +319,9 @@ function <SID>TExpandVars()
 	call <SID>TExpand("CLASS", l:class)
 	call <SID>TExpand("MACROCLASS", l:macroclass)
 	call <SID>TExpand("CAMELCLASS", l:camelclass)
-	call <SID>TExpand("LICENSE", exists("g:license") ? g:license : "MIT")
+	call <SID>TExpand("LICENSE", l:license)
+	call <SID>TExpand("FLICENSE", l:flicense)
+	call <SID>TExpand("COPYRIGHT_OWNER", l:copyright_owner)
 endfunction
 
 " }}}2
