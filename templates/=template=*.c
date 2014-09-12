@@ -11,6 +11,6 @@
  * %FLICENSE%
  */
 
-#include "%FILE%.h"
+#include <stdio.h>
 
 
