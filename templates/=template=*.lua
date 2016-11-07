@@ -1,9 +1,9 @@
 #! /usr/bin/env lua
 --
--- %FFILE%
--- Copyright (C) %YEAR% %USER% <%MAIL%>
+-- Copyright (c) %YEAR%, %COPYRIGHT_OWNER%
+-- All rights reserved.
 --
--- Distributed under terms of the %LICENSE% license.
+-- %USER% <%MAIL%>
 --
 
 %HERE%
